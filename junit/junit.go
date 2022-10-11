@@ -54,7 +54,7 @@ func (t *Testsuites) WriteXML(w io.Writer) error {
 // Testsuite is a single JUnit testsuite containing testcases.
 type Testsuite struct {
 	// required attributes
-	Name     string `xml:"name,attr"`
+	Name     string `xml:"classname,attr"`
 	Tests    int    `xml:"tests,attr"`
 	Failures int    `xml:"failures,attr"`
 	Errors   int    `xml:"errors,attr"`
